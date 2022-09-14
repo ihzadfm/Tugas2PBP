@@ -2,15 +2,13 @@ Nama : Ihza Dafa Maulidan
 NPM : 21066652726
 Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/katalog/
 
-
 1. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html;
 
-
+https://drive.google.com/file/d/1YWppt325fTGqCI-MLWnx2nuLjMN8LxqW/view?usp=sharing
 
 2. Jelaskan kenapa menggunakan virtual environment? Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
 
 Saat kita menginstal modul/library menggunakan pip, modulnya akan terinstal secara global di /usr/lib/python2.7/site-packages. Semua aplikasi web django bisa dibuat tanpa menggunakan virtual environment . Akan tetapi mempunyai kekurangan jika saat kita mendapatkan suatu perubahan versi modul pada Django akan menjadi masalah yang berbarengan dengan pembuatan suatu proyek aplikasi. Walaupun setelah itu, kita sudah update modul, tetap saja akan menjadikan aplikasi yang sudah kita buat tidak bisa berjalan akibat perubahan versi modul yang terbaru karena update fungsi, dll. Sedangkan modul versi lama masih masih dibutuhkan proyek aplikasi lain, oleh karena itulah gunanya virtual environment supaya masing-masing aplikasi mempunyai modul sendiri. Di samping itu virtual environment, dependencies dan packages yang diperlukan oleh kerangka kerja Django secara otomatis diinstal padahal di local tidak terinstall secara global. Jika kita tidak memakai env, hanya akan dapat mengaksesnya dari direktori tempat yang sudah dinstall saja. Tujuan lain untuk membuat ruang kerja Python yang terisolasi, sehingga kita tidak akan mengganggu saat punya banyak proyek. 
-
 
 3. Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
 

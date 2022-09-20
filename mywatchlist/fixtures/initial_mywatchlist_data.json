@@ -1,0 +1,112 @@
+[
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched":"Yes",
+            "title":"Thor: Love and Thunder",
+            "rating": "3.2",
+            "release_date":"06 Jul 2022",
+            "review":"Thor: Nepotism and Narcissism. The Family Vanity Venture."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched":"Yes",
+            "title":"The Avengers",
+            "rating": "4.5",
+            "release_date":"4 May 2012",
+            "review":"Not 100% perfect but still an outstanding film in so many ways."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched":"Yes",
+            "title":"Shang-Chi and the Legend of the Ten Rings",
+            "rating": "4.4",
+            "release_date":"30 September 2021",
+            "review":"This film is a love letter to Asia. The creatures the atmosphere the fights. They really took their time with this."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched":"Yes",
+            "title":"Captain Marvel",
+            "rating": "4.0",
+            "release_date":"8 March 2019",
+            "review":"Brie Larson is a welcome addition to the roster and she does a good job with this character. The film has some standard origin movie motifs but the winning cast, which also includes Samuel."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched":"Yes",
+            "title":"Black Panther",
+            "rating": "4.7",
+            "release_date":"14 February 2018",
+            "review":"With all the hype surrounding this movie, I must admit that I had expected something extraordinary."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched":"No",
+            "title":"Ant-Man",
+            "rating": "4.0",
+            "release_date":"16 July 2015",
+            "review":"This movie was heavy on battle and action scenes and had an ok plot, and could have used more in that area."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched":"No",
+            "title":"The Avengers: Age of Ultron",
+            "rating": "3.9",
+            "release_date":"22 April 2015",
+            "review":"This movie was heavy on battle and action scenes and had an ok plot, and could have used more in that area."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched":"No",
+            "title":"Captain America: Civil War",
+            "rating": "4.3",
+            "release_date":"27 April 2016",
+            "review":"This is an entertaining and thought provoking superhero origin story with a number of solid performances."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched":"No",
+            "title":"The Incredible Hulk",
+            "rating": "4.1",
+            "release_date":"18 June 2008",
+            "review":"I love the quality of their films, they more or less always look great, and in their films we constantly see great performances and witness memorable moments."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched":"No",
+            "title":"Black Widow",
+            "rating": "3.9",
+            "release_date":"9 July 2021",
+            "review":"This film is visually stunning, with great direction, and overall acting."
+        }
+    }
+]

@@ -1,6 +1,6 @@
 Nama : Ihza Dafa Maulidan
 NPM : 21066652726
-Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/katalog/
+Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/mywatchlist/
 
 Membuat sebuah README.md yang berisi tautan menuju aplikasi Heroku yang sudah kamu deploy serta jawaban dari beberapa pertanyaan berikut:
  1. Jelaskan perbedaan antara JSON, XML, dan HTML!

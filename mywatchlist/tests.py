@@ -1,15 +1,16 @@
 from django.test import TestCase
+from django.test import Client
 
 # Create your tests here.
-class TestUrl(TestCase):
-    def test_url_html_exists(self):
-        response = Client().get('https://tugas2pbpihza.herokuapp.com/mywatchlist/html/')
+class TestMyWatchListUrl(TestCase):
+    def testmywatchlisturl_html_exists(self):
+        response = Client().get('/mywatchlist/html/')
         self.assertEqual(response.status_code, 200)
 
-    def test_url_xml_exists(self):
-        response = Client().get('https://tugas2pbpihza.herokuapp.com/mywatchlist/xml/')
+    def testmywatchlisturl_xml_exists(self):
+        response = Client().get('/mywatchlist/xml/')
         self.assertEqual(response.status_code, 200)
 
-    def test_url_json_exists(self):
-        response = Client().get('https://tugas2pbpihza.herokuapp.com/mywatchlist/json/')
+    def testmywatchlisturl_json_exists(self):
+        response = Client().get('/mywatchlist/json/')
         self.assertEqual(response.status_code, 200)

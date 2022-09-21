@@ -6,11 +6,11 @@ from django.core import serializers
 # Create your views here.
 def show_mywatchlist(request):
     data = MyWatchList.objects.all()
-    counter = 0
+    jml_film = 0
     for film in data:
         if(film.watched == "Yes"):
-            counter+=1
-    if(counter < 10 - counter):
+            jml_film+=1
+    if(jml_film < 10 - jml_film):
         isi = "Wah, kamu masih sedikit menonton!"
     else:
         isi = "Selamat, kamu sudah banyak menonton!"

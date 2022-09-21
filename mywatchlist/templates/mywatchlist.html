@@ -5,10 +5,12 @@
   <h1>TUGAS 3 PBP/PBD</h1>
 
   <h5>Name: </h5>
-  <p>Ihza Dafa Maulidan</p>
+  <p>{{nama}}</p>
 
   <h5>Student ID: </h5>
-  <p>2106652726</p>
+  <p>{{npm}}</p>
+
+  <h3>{{pesan}}</h3>
 
   <table>
     <tr>
@@ -19,7 +21,7 @@
       <th>Review</th>
     </tr>
     {% comment %} Add the data below this line {% endcomment %}
-    {% for film in MyWatchlist %}
+    {% for film in mywatchlist %}
     <tr>
         <th>{{film.watched}}</th>
         <th>{{film.title}}</th>
@@ -27,7 +29,7 @@
         <th>{{film.release_date}}</th>
         <th>{{film.review}}</th>
     </tr>
-{% endfor %}
+  {% endfor %}
   </table>
 
  {% endblock content %}

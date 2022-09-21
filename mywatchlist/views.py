@@ -8,7 +8,7 @@ def show_mywatchlist(request):
     datamywatchlist = MyWatchList.objects.all()
     count = 0
     for film in datamywatchlist:
-        if film.watched == "Yes":
+        if film.is_watched == "Yes":
             count += 1
     if count >= 5:
         isi = "Selamat, kamu sudah banyak menonton!"
@@ -19,7 +19,7 @@ def show_mywatchlist(request):
         'mywatchlist': datamywatchlist,
         'nama': 'Ihza Dafa Maulidan',
         'npm': '2106652726',
-        'pesan ': isi
+        'pesan': isi
     }
     return render(request, "mywatchlist.html", context)
 

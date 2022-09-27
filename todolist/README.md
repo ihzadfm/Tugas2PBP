@@ -1,6 +1,6 @@
 Nama : Ihza Dafa Maulidan
 NPM : 21066652726
-Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/katalog/
+Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/todolist/
 
 1. Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 
@@ -44,5 +44,12 @@ def show_todolist(request):
     return render(request, 'todolist.html', {'data_todolist':data_todolist})
 
 
-
 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+a) Membuat sebuah aplikasi django beserta konfigurasi modelnya bernama todolist dengan perintah python manage.py startapp todolist, kita buat di repo tugas 2 PBP yang sudah dibuat sebelumnya.
+b) Kita sebagai user wajib menambahkan path todolist agar dapat membuka localhost dengan cara pada file urls.py kita tambahkan path('todolist/', include('todolist.urls')), pada bagian urlpatterns. Jika kita telah menambahkan path, dapat dipastikan ketika kita mengakses `http://localhost:8000/todolist` akan muncul aplikasi yang kita buat. 
+c) Pada file models.py yang ada pada folder todolist saya menambahkan beberapa atribut yang dibutuhkan seperti `user` menghubungkan task dengan pengguna yang membuat task tersebut dengan menggunakan tipe model models.ForeignKey dan parameternya user, lalu ada atribut `title` untuk memetakan judul pada task, selanjutnya ada atribut `date` yang berguna mendeskripsikan tanggal pembuatan task, setelah itu atribut `description` berguna mendeskripsikan deskripsi task. 
+d) Tidak lupa melakukan makemigrations dan migrate dengan python manage.py pada cmd ke dalam local database, lalu implementasikan form registrasi registrasi, login, dan logout dengan membuat HTML pada template yang isinya file register.html dan login.html . Disamping itu untuk dapat menjalankan request user, kita perlu membuat fungsi pada file views.py
+e) Saya membuat page utama pada file todolist.html berbarengan dengan kedua file HTML sebelumnya di folder templates dengan menambahkan potongan kode berikut "{% url 'todolist:create_task' %}" yang dijadikan button.
+f) Page form perlu dibuat untuk konfigurasi model dan fields yang dijadikan tampilan interface dengan hanya perlu memasukkan judul task dan deskripsi task oleh user, semua itu menjadi proses pembuatan task dengan menambahkan file forms.py dan mengisi create_task.html pada folder templates. Setelah semua dilakukan buat juga fungsi pada file views.py yang bertujuan mengalirkan data yang dibutuhkan untuk ditampilkan pada page create_task
+g)  Terakhir kita buat routing agar beberapa fungsi dapat kita buka melalui localhost seperti path-path login, register, logout, create task, dan halaman utama todolist pada file urls.py di bagian urlpatternsnya pada folder todolist. Terakhir saya melakukan`deployment` yang sudah otomatis terdeploy ke `herokuapp` karena menggunakan repo tugas sebelumnya yang pasti sudah terdeploy pekan lalu.

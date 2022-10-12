@@ -1,7 +1,7 @@
 import datetime
 from dataclasses import dataclass
 from todolist.models import Task
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse, JsonResponse
 from django.urls import reverse
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
@@ -9,6 +9,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from todolist.forms import CreateNewTask
+from django.core import serializers
+
 
 # Create your views here.
 @login_required(login_url='/todolist/login/')
@@ -20,6 +22,11 @@ def show_todolist(request):
     'last_login': request.COOKIES['last_login'],
     }
     return render(request, "todolist.html", context)
+
+@login_required(login_url='/todolist/login/')
+def show_todolist_json(request):
+    data_todolist = Task.objects.filter(user = request.user)
+    return HttpResponse(serializers.serialize("json", data_todolist), content_type="application/json")
 
 def register(request):
     form = UserCreationForm()

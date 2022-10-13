@@ -1,6 +1,6 @@
 Nama : Ihza Dafa Maulidan
 NPM : 21066652726
-Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/todolist/
+Link deploy Heroku : https://tugas2pbpihza.herokuapp.com/todolist/login
 
 1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
 Asynchronous programming merupakan sebuah pendekatan pemrograman yang tidak terikat pada input output (I/O)  protocol. Ini menandakan bahwa pemrograman asynchronous tidak melakukan pekerjaannya secara old style / cara lama yaitu dengan eksekusi baris program satu persatu secara hirarki. Asynchronous programming melakukan pekerjaannya tanpa harus terikat dengan proses lain atau dapat kita sebut secara Independent. Sedangkan, synchronous programming memiliki pendekatan yang lebih old style. Task akan dieksekusi satu persatu sesuai dengan urutan dan prioritas task. Hal ini memiliki kekurangan pada lama waktu eksekusi karena masing-masing task harus menunggu task lain selesai untuk diproses terlebih dahulu.

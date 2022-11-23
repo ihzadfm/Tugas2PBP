@@ -3,7 +3,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":1,
         "fields":{
-            "is_watched": true,
+            "is_watched": "true",
             "title":"Thor: Love and Thunder",
             "rating": 3,
             "release_date":"06 Jul 2022",
@@ -14,7 +14,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":2,
         "fields":{
-            "is_watched":true,
+            "is_watched":"true",
             "title":"The Avengers",
             "rating": 4,
             "release_date":"4 May 2012",
@@ -25,7 +25,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":3,
         "fields":{
-            "is_watched":true,
+            "is_watched":"true",
             "title":"Shang-Chi",
             "rating": 4,
             "release_date":"30 Sept 2021",
@@ -36,7 +36,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":4,
         "fields":{
-            "is_watched":true,
+            "is_watched":"true",
             "title":"Captain Marvel",
             "rating": 4,
             "release_date":"8 Mar 2019",
@@ -47,7 +47,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":5,
         "fields":{
-            "is_watched":true,
+            "is_watched":"true",
             "title":"Black Panther",
             "rating": 4,
             "release_date":"14 Feb 2018",
@@ -58,7 +58,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":6,
         "fields":{
-            "is_watched":false,
+            "is_watched":"false",
             "title":"Ant-Man",
             "rating": 4,
             "release_date":"16 Jul 2015",
@@ -69,7 +69,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":7,
         "fields":{
-            "is_watched":false,
+            "is_watched":"false",
             "title":"The Avengers: Age of Ultron",
             "rating": 3,
             "release_date":"22 Apr 2015",
@@ -80,7 +80,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":8,
         "fields":{
-            "is_watched":false,
+            "is_watched":"false",
             "title":"Captain America: Civil War",
             "rating": 4,
             "release_date":"27 Apr 2016",
@@ -91,7 +91,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":9,
         "fields":{
-            "is_watched":false,
+            "is_watched":"false",
             "title":"The Incredible Hulk",
             "rating": 4,
             "release_date":"18 Jun 2008",
@@ -102,7 +102,7 @@
         "model":"mywatchlist.mywatchlist",
         "pk":10,
         "fields":{
-            "is_watched":false,
+            "is_watched":"false",
             "title":"Black Widow",
             "rating": 3,
             "release_date":"9 Jul 2021",
